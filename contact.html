@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wedding Card layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="logo-search-row">
+        <div class="logo-block">
+          <div class="logo">
+            <img src="images/roundleaf.png" alt="Logo" />
+            <div class="logo-center-text">Cherish<br />By</div>
+          </div>
+          <div class="logo-text">Wed Knot Craft</div>
+        </div>
+        <div class="search-icons">
+          <form action="search.html" method="get">
+            <button type="submit" class="search-button">Search...</button>
+          </form>
+
+          <a href="/contact.html" aria-label="Contact" class="nav-icon-link">
+            <i class="fa-duotone fa-solid fa-address-book"></i>
+          </a>
+
+          <a
+            href="/favourite.html"
+            aria-label="Favorites"
+            class="nav-icon-link"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <a href="/cart.html" aria-label="Shopping Cart" class="nav-icon-link">
+            <i class="fa-regular fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/card.html"></a>Home</li>
+        <li class="dropdown">
+          <span>Wedding Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hindu Wedding Cards</a></li>
+            <li><a href="#">Muslim Wedding Cards</a></li>
+            <li><a href="#">Christian Wedding Cards</a></li>
+            <li><a href="#">Exclusive Cards</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <span>Special occasions</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Birthday Invitations</a></li>
+            <li><a href="#">Pupery Cards</a></li>
+            <li><a href="#">Luxury Invitations</a></li>
+            <li><a href="#">Ear Boring Cards</a></li>
+            <li><a href="#">Engagement Cards</a></li>
+            <li><a href="#">House Warming</a></li>
+            <li><a href="#">Anniversary Cards</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Theme cards</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Beach Theme Cards</a></li>
+            <li><a href="#">Bride Theme Cards</a></li>
+            <li><a href="#">Box Cards</a></li>
+            <li><a href="#">Single Sheet Cards</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Scroll Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Small size scroll</a></li>
+            <li><a href="#">Box scroll</a></li>
+            <li><a href="#">Only scroll</a></li>
+            <li><a href="#">High end scroll</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Digital Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Whatsapp Cards</a></li>
+            <li><a href="#">Save the date cards</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <style>
+      /* Container and layout */
+      .login-form-container {
+        max-width: 400px;
+        background: white;
+        padding: 32px 36px;
+        border-radius: 8px;
+        box-shadow: 0 12px 50px rgba(16, 16, 56, 0.11);
+        font-family: "Poppins", sans-serif;
+        margin: 20px auto;
+      }
+
+      /* Tabs */
+      .login-tabs {
+        display: flex;
+        border-bottom: 2px solid #ede5e5;
+        margin-bottom: 20px;
+        user-select: none;
+      }
+
+      .login-tabs input[type="radio"] {
+        display: none;
+      }
+
+      .tab {
+        font-weight: 600;
+        padding: 0 0 10px 0;
+        margin-right: 30px;
+        font-size: 1.05em;
+        color: #666;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .tab.active,
+      #login-tab:checked + label.tab,
+      #signup-tab:checked + label.tab {
+        color: #111;
+        border-bottom: 3px solid #111;
+      }
+
+      /* Form heading */
+      .login-form h3 {
+        margin: 0 0 20px 0;
+        font-weight: 600;
+        color: #222;
+        font-size: 1.1em;
+      }
+
+      /* Form labels */
+      .login-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+        color: #333;
+        font-size: 0.95em;
+      }
+
+      /* Input fields */
+      .login-form input[type="email"],
+      .login-form input[type="password"] {
+        width: 100%;
+        padding: 8px 10px;
+        margin-bottom: 16px;
+        border-radius: 6px;
+        border: 1.3px solid #ddd;
+        font-size: 1em;
+        background-color: #f9f9f9;
+        outline: none;
+        transition: border-color 0.15s ease;
+      }
+
+      .login-form input[type="email"]:focus,
+      .login-form input[type="password"]:focus {
+        border-color: #c44a44;
+        background-color: #fff;
+      }
+
+      /* Submit button */
+      .login-btn {
+        width: 100%;
+        padding: 10px 0;
+        background-color: #c44a44;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .login-btn:hover {
+        background-color: #9e2b2a;
+      }
+
+      /* Forgot password link */
+      .forgot-password {
+        display: block;
+        margin-top: 14px;
+        text-align: center;
+        font-size: 0.9em;
+        font-weight: 600;
+        color: #c44a44;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .forgot-password:hover {
+        text-decoration: underline;
+      }
+    </style>
+
+    <div class="login-form-container">
+      <div class="login-tabs">
+        <input type="radio" id="login-tab" name="auth" checked />
+        <label for="login-tab" class="tab active">Login</label>
+        <input type="radio" id="signup-tab" name="auth" />
+        <label for="signup-tab" class="tab">Sign Up</label>
+      </div>
+      <form class="login-form">
+        <h3>Login to my Account</h3>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email" required />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Password"
+          required
+        />
+        <button type="submit" class="login-btn">Login &amp; Continue</button>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </form>
+    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-block">
+            <div class="logo">
+              <img src="images/roundleaf.png" alt="Logo" />
+              <div class="logo-center-text">Cherish<br />By</div>
+            </div>
+            <div class="logo-text"><b>Wed Knot Craft</b></div>
+          </div>
+          <div class="footer-brand-name">
+            <span>Largest Wedding Cards Collections in Chennai</span>
+          </div>
+          <div class="footer-social">
+            <b> Follow us </b>
+
+            <a href="#"><img src="images/faceook.jpg" alt="Facebook" /></a>
+            <a href="#"><img src="images/instragram.jpg" alt="Instagram" /></a>
+            <a href="#"><img src="images/whatsapp.png" alt="WhatsApp" /></a>
+            <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Information</div>
+          <ul>
+            <li><a href="/aboutus.html">About Us</a></li>
+            <li><a href="/contactus.html">Contact Us</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li>
+              <a href="/howtoorder.html"
+                >How to order wedding invitation online?</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Quick Access</div>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/weddinginvitation.html">Wedding Cards</a></li>
+            <li><a href="/hindu.html">Hindu Wedding Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Contact Us</div>
+          <ul>
+            <li>
+              <img src="images/phoneicon.png" alt="Phone" class="footer-icon" />
+              +91 9876543210
+            </li>
+            <li>
+              <img src="images/email.png" alt="Email" class="footer-icon" />
+              wedtype@weddingcards.com
+            </li>
+            <li>Operating hours: 10.00Am to 10.00Pm</li>
+            <li><b>Monday - Sunday</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          ><b
+            >© Wed knot craft India Private Limited. All Rights Reserved.</b
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

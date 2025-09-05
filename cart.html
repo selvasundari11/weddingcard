@@ -1,0 +1,153 @@
+<style>
+  .cart-container {
+    max-width: 680px;
+    margin: 30px auto;
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 6px;
+  }
+
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14.5px;
+    color: #171717;
+    text-align: left;
+  }
+
+  .cart-table th {
+    font-weight: 700;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .product-info {
+    position: relative;
+  }
+
+  .sku-sn-box {
+    background-color: #ffa726;
+    border-radius: 6px;
+    padding: 10px 15px;
+    color: #1a1303;
+    font-weight: 700;
+    box-sizing: border-box;
+    max-width: 150px;
+    font-size: 14px;
+  }
+
+  .text-right {
+    text-align: right;
+    font-weight: 600;
+  }
+
+  tfoot td {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .minimum-warning {
+    color: red;
+    font-weight: 700;
+    font-size: 14.5px;
+    text-align: center;
+    margin: 18px 0 26px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .cart-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .btn {
+    border: none;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 7px;
+    font-size: 14.5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+
+  .continue-btn {
+    background-color: #ffa726;
+    color: #3a0d04;
+  }
+
+  .continue-btn:hover {
+    background-color: #e79413;
+  }
+
+  .checkout-btn {
+    background-color: #7a7a7a;
+    color: #1b1b1b;
+  }
+
+  .checkout-btn:hover {
+    background-color: #5c5c5c;
+  }
+</style>
+
+<div class="cart-container">
+  <table class="cart-table">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Qty</th>
+        <th>Unit Price</th>
+        <th>Tax</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="product-info">
+          <div class="sku-sn-box">
+            <div><strong>SKU: KSN0054</strong></div>
+            <div>SN (SN 54)</div>
+          </div>
+        </td>
+        <td>2</td>
+        <td>Rs.65.00</td>
+        <td>18%</td>
+        <td>Rs.130.00</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4" class="text-right">Sub Total:</td>
+        <td>Rs.130.00</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="text-right">Total Tax:</td>
+        <td>Rs.23.40</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="text-right">Total:</td>
+        <td>Rs.153.40</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <p class="minimum-warning">
+    TO CHECKOUT PLEASE ADD MINIMUM 100 ITEMS TO THE CART
+  </p>
+
+  <div class="cart-buttons">
+    <!-- <button class="btn continue-btn">Continue Shopping</button> -->
+    <a href="/index.html" class="btn continue-btn">Continue Shopping</a>
+
+    <button class="btn checkout-btn">Checkout</button>
+  </div>
+</div>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wedding Card layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="logo-search-row">
+        <div class="logo-block">
+          <div class="logo">
+            <img src="images/roundleaf.png" alt="Logo" />
+            <div class="logo-center-text">Cherish<br />By</div>
+          </div>
+          <div class="logo-text">Wed Knot Craft</div>
+        </div>
+        <div class="search-icons">
+          <form action="search.html" method="get">
+            <button type="submit" class="search-button">Search...</button>
+          </form>
+
+          <a href="/contact.html" aria-label="Contact" class="nav-icon-link">
+            <i class="fa-duotone fa-solid fa-address-book"></i>
+          </a>
+
+          <a
+            href="/favourite.html"
+            aria-label="Favorites"
+            class="nav-icon-link"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <a href="/cart.html" aria-label="Shopping Cart" class="nav-icon-link">
+            <i class="fa-regular fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/card.html"></a>Home</li>
+        <li class="dropdown">
+          <span>Wedding Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hindu Wedding Cards</a></li>
+            <li><a href="#">Muslim Wedding Cards</a></li>
+            <li><a href="#">Christian Wedding Cards</a></li>
+            <li><a href="#">Exclusive Cards</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <span>Special occasions</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Birthday Invitations</a></li>
+            <li><a href="#">Pupery Cards</a></li>
+            <li><a href="#">Luxury Invitations</a></li>
+            <li><a href="#">Ear Boring Cards</a></li>
+            <li><a href="#">Engagement Cards</a></li>
+            <li><a href="#">House Warming</a></li>
+            <li><a href="#">Anniversary Cards</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Theme cards</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Beach Theme Cards</a></li>
+            <li><a href="#">Bride Theme Cards</a></li>
+            <li><a href="#">Box Cards</a></li>
+            <li><a href="#">Single Sheet Cards</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Scroll Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Small size scroll</a></li>
+            <li><a href="#">Box scroll</a></li>
+            <li><a href="#">Only scroll</a></li>
+            <li><a href="#">High end scroll</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Digital Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Whatsapp Cards</a></li>
+            <li><a href="#">Save the date cards</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e6e9f7;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 30px auto;
+        background: #f7f8ff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #333;
+        text-align: center;
+      }
+
+      .contact-section {
+        margin-bottom: 30px;
+      }
+
+      .contact-box {
+        background: #fff;
+
+        padding: 15px 20px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+      }
+
+      .contact-box h3 {
+        font-size: 18px;
+        margin: 0 0 8px 0;
+      }
+
+      .contact-box p {
+        margin: 5px 0;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .contact-box a {
+        text-decoration: none;
+      }
+
+      .contact-box a:hover {
+        text-decoration: underline;
+      }
+
+      .description {
+        background: #fff;
+        padding: 20px;
+        border-radius: 6px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .description h3 {
+        margin-top: 0;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .highlight-box {
+        background: #f5f6fe;
+
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 6px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .description p {
+        color: #444;
+        margin-bottom: 15px;
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+          We'd love to hear from you! Whether you have a question, need help
+          customizing your invites, or just want to chat about your dream
+          wedding stationery — we’re here for you.
+        </p>
+      </div>
+
+      <div class="contact-section">
+        <h2>Support</h2>
+        <div class="contact-box">
+          <h3>India (Toll Free)</h3>
+          <p>Only Call – No Whatsapp Number</p>
+          <p>
+            Email:
+            <a href="mailto:support@indianweddingcard.com"
+              >support@indianweddingcard.com</a
+            >
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <h3>Proofing Department</h3>
+          <p>
+            <strong>Indian Standard Time (IST)</strong><br />
+            Hours: 9:30 am to 6:30 pm (Mon–Sat)
+          </p>
+          <p>
+            Email:
+            <a href="mailto:proofs@indianweddingcard.com"
+              >proofs@indianweddingcard.com</a
+            >
+          </p>
+          <p>
+            Customer Support:
+            <a href="mailto:customersupport@indianweddingcard.com"
+              >customersupport@indianweddingcard.com</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="description">
+        <h3>Contact Us</h3>
+        <p>
+          Whether you’re looking for inquiries, quotes or to track an order,
+          ordering, we just want to let you know how we can assist you.
+        </p>
+
+        <div class="highlight-box">
+          An online Invitation Store with Worldwide Delivery!
+        </div>
+
+        <p>
+          Weddings are always special but the fact about
+          <strong>IndianWeddingCard.com</strong> is that they are bespoke
+          wedding cards & invitations that touch the hearts of millions. And
+          since the inception of our store, we have served & delivered cards
+          across the world.
+        </p>
+
+        <p>
+          In the past years we created milestones and have more than 50 years of
+          experience about items to be available on your wedding. We carry
+          extensive samples and collections that meet every budget and taste.
+        </p>
+
+        <p>
+          Because of our experience we have gained advantage in the market and
+          have become the true leaders when it comes to wedding cards & invites
+          online.
+        </p>
+
+        <p>
+          We carry a wide range of invitation cards at
+          <strong>IndianWeddingCard.com</strong>. It is well known to design
+          unique wedding invitation cards like Scroll Wedding Cards, Hindu
+          Wedding Cards, Sikh Wedding Cards, Islamic Wedding Cards, Christian
+          Wedding Cards.
+        </p>
+
+        <p>
+          If you have any query related to invitations or designs of our cards,
+          please feel free to contact us!
+        </p>
+      </div>
+    </div>
+   <!-- Footer -->
+   <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo-block">
+          <div class="logo">
+            <img src="images/roundleaf.png" alt="Logo" />
+            <div class="logo-center-text">Cherish<br />By</div>
+          </div>
+          <div class="logo-text"><b>Wed Knot Craft</b></div>
+        </div>
+        <div class="footer-brand-name">
+          <span>Largest Wedding Cards Collections in Chennai</span>
+        </div>
+        <div class="footer-social">
+          <b> Follow us </b>
+
+          <a href="#"><img src="images/faceook.jpg" alt="Facebook" /></a>
+          <a href="#"><img src="images/instragram.jpg" alt="Instagram" /></a>
+          <a href="#"><img src="images/whatsapp.png" alt="WhatsApp" /></a>
+          <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Information</div>
+        <ul>
+          <li><a href="/aboutus.html">About Us</a></li>
+          <li><a href="/contactus.html">Contact Us</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li>
+            <a href="/howtoorder.html"
+              >How to order wedding invitation online?</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Quick Access</div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/weddinginvitation.html">Wedding Cards</a></li>
+          <li><a href="/hindu.html">Hindu Wedding Cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Contact Us</div>
+        <ul>
+          <li>
+            <img src="images/phoneicon.png" alt="Phone" class="footer-icon" />
+            +91 9876543210
+          </li>
+          <li>
+            <img src="images/email.png" alt="Email" class="footer-icon" />
+            wedtype@weddingcards.com
+          </li>
+          <li>Operating hours: 10.00Am to 10.00Pm</li>
+          <li><b>Monday - Sunday</b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span
+        ><b
+          >© Wed knot craft India Private Limited. All Rights Reserved.</b
+        ></span
+      >
+    </div>
+  </footer>
+</body>
+</html>

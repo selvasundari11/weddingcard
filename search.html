@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wedding Card layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="logo-search-row">
+        <div class="logo-block">
+          <div class="logo">
+            <img src="images/roundleaf.png" alt="Logo" />
+            <div class="logo-center-text">Cherish<br />By</div>
+          </div>
+          <div class="logo-text">Wed Knot Craft</div>
+        </div>
+        <div class="search-icons">
+          <form action="search.html" method="get">
+            <button type="submit" class="search-button">Search...</button>
+          </form>
+
+          <a href="/contact.html" aria-label="Contact" class="nav-icon-link">
+            <i class="fa-duotone fa-solid fa-address-book"></i>
+          </a>
+
+          <a
+            href="/favourite.html"
+            aria-label="Favorites"
+            class="nav-icon-link"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <a href="/cart.html" aria-label="Shopping Cart" class="nav-icon-link">
+            <i class="fa-regular fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/card.html"></a>Home</li>
+        <li class="dropdown">
+          <span>Wedding Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hindu Wedding Cards</a></li>
+            <li><a href="#">Muslim Wedding Cards</a></li>
+            <li><a href="#">Christian Wedding Cards</a></li>
+            <li><a href="#">Exclusive Cards</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <span>Special occasions</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Birthday Invitations</a></li>
+            <li><a href="#">Pupery Cards</a></li>
+            <li><a href="#">Luxury Invitations</a></li>
+            <li><a href="#">Ear Boring Cards</a></li>
+            <li><a href="#">Engagement Cards</a></li>
+            <li><a href="#">House Warming</a></li>
+            <li><a href="#">Anniversary Cards</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Theme cards</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Beach Theme Cards</a></li>
+            <li><a href="#">Bride Theme Cards</a></li>
+            <li><a href="#">Box Cards</a></li>
+            <li><a href="#">Single Sheet Cards</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Scroll Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Small size scroll</a></li>
+            <li><a href="#">Box scroll</a></li>
+            <li><a href="#">Only scroll</a></li>
+            <li><a href="#">High end scroll</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Digital Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Whatsapp Cards</a></li>
+            <li><a href="#">Save the date cards</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <style>
+      body {
+        background: #e9eaf6;
+        font-family: "Poppins", Arial, sans-serif;
+        margin: 0;
+      }
+
+      .wedding-cards-section {
+        width: 100%;
+        padding: 36px 0 0 0;
+        background: #e9eaf6;
+        text-align: center;
+      }
+
+      .wedding-cards-section h2 {
+        font-size: 1.22rem;
+        font-weight: 700;
+        margin-bottom: 7px;
+        color: #22223b;
+      }
+
+      .wedding-cards-section p {
+        font-size: 0.99rem;
+        color: #4d4d4d;
+        margin-bottom: 16px;
+      }
+
+      .search-bar {
+        margin: 0 auto 24px auto;
+        max-width: 900px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .all-btn {
+        background: #fc86b0;
+        color: #fff;
+        font-weight: 500;
+        border: none;
+        border-radius: 18px;
+        padding: 8px 24px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-right: 6px;
+        box-shadow: 0 1px 3px rgba(255, 150, 192, 0.13);
+      }
+
+      .search-input {
+        border: 1.5px solid #dee2e6;
+        border-radius: 9px;
+        padding: 8px 20px;
+        font-size: 1rem;
+        width: 730px;
+        outline: none;
+        margin-right: 8px;
+      }
+
+      .filters {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .filter-tag {
+        background: #fff;
+        border-radius: 9px;
+        padding: 7px 16px;
+        font-size: 0.97rem;
+        color: #22223b;
+        font-weight: 410;
+        border: 1px solid #e0e2ee;
+        box-shadow: 0 2px 6px rgba(175, 167, 219, 0.06);
+      }
+
+      .ideas-section,
+      .popular-section {
+        margin: 0 auto;
+        max-width: 1000px;
+        padding-top: 10px;
+      }
+
+      .ideas-section h3,
+      .popular-section h3 {
+        text-align: left;
+        margin: 24px 0 11px 18px;
+        font-weight: 600;
+        font-size: 1.09rem;
+        color: #22223b;
+      }
+
+      .ideas-row,
+      .popular-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: flex-start;
+        margin-left: 18px;
+      }
+
+      /* Card styling */
+      .card-box {
+        background: #fff;
+        border-radius: 13px;
+        box-shadow: 0 2px 10px rgba(90, 90, 90, 0.13);
+        width: 225px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 9px 16px 9px 9px;
+        margin-bottom: 8px;
+      }
+
+      .card-box img {
+        width: 85px;
+        height: 84px;
+        object-fit: cover;
+        border-radius: 9px;
+        box-shadow: 0 1px 8px rgba(60, 80, 120, 0.17);
+        background: #eee;
+        flex-shrink: 0;
+      }
+
+      .card-label {
+        font-size: 0.98rem;
+        font-weight: 500;
+        color: #22223b;
+        margin-left: 6px;
+        text-align: left;
+        word-break: break-word;
+      }
+
+      /* Responsive tweaks */
+      @media (max-width: 900px) {
+        .ideas-row,
+        .popular-row {
+          gap: 18px;
+          justify-content: center;
+          margin-left: 0;
+        }
+        .wedding-cards-section h2,
+        .wedding-cards-section p {
+          padding: 0 14px;
+        }
+        .card-box {
+          width: 97vw;
+          max-width: 340px;
+          margin-left: 0;
+        }
+      }
+
+      /* Hide scroll bar for rows */
+      .ideas-row,
+      .popular-row {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .ideas-row::-webkit-scrollbar,
+      .popular-row::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <div class="wedding-cards-section">
+      <h2>Everything You Need, to Plan your Dream Wedding</h2>
+      <p>Search for vendors, cards, ideas and real wedding stories and more!</p>
+      <div class="search-bar">
+        <button class="all-btn">All</button>
+        <input type="text" placeholder="Search" class="search-input" />
+        <div class="filters">
+          <span class="filter-tag">Wedding Cards ✕</span>
+          <span class="filter-tag">Scroll Cards ✕</span>
+          <span class="filter-tag">Theme Cards ✕</span>
+          <span class="filter-tag">Birthday Cards ✕</span>
+          <span class="filter-tag">Engagement Cards ✕</span>
+        </div>
+      </div>
+
+      <div class="ideas-section">
+        <h3>Ideas for you</h3>
+        <div class="ideas-row">
+          <div class="card-box" style="background-color: rgb(236, 168, 42)">
+            <img src="images/sonal and vijay.png" alt="Hindu wedding Card" />
+            <span class="card-label">Hindu wedding Card</span>
+          </div>
+          <div class="card-box" style="background-color: rgb(191, 221, 131)">
+            <img src="images/brown simple card.png" alt="Simple wedding Card" />
+            <span class="card-label">Simple wedding Card</span>
+          </div>
+          <div class="card-box" style="background-color: chocolate">
+            <img src="images/karla and kumar.jpg" alt="Muslim wedding Card" />
+            <span class="card-label">Muslim wedding Card</span>
+          </div>
+          <div class="card-box" style="background-color: skyblue">
+            <img
+              src="images/kirandeep and surk.png"
+              alt="Scroll wedding Card"
+            />
+            <span class="card-label">Scroll wedding Card</span>
+          </div>
+          <div class="card-box" style="background-color: violet">
+            <img src="images/darkgreen card.png" alt="Luxury wedding Card" />
+            <span class="card-label">Luxury wedding Card</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-section">
+        <h3>Popular on this</h3>
+        <div class="popular-row">
+          <div class="card-box" style="background-color: rgb(195, 230, 241)">
+            <img
+              src="images/karla and kumar.jpg"
+              alt="Post Theme Wedding Card"
+            />
+            <span class="card-label">Post Theme Wedding Card</span>
+          </div>
+          <div class="card-box" style="background-color: rgb(235, 193, 235)">
+            <img src="images/jasp and hasp.png" alt="Scroll Wedding Card" />
+            <span class="card-label">Scroll Wedding Card</span>
+          </div>
+          <div class="card-box" style="background-color: rgb(233, 194, 123)">
+            <img src="images/lightorange card.png" alt="Theme Wedding Card" />
+            <span class="card-label">Theme Wedding Card</span>
+          </div>
+          <div class="card-box" style="background-color: rgb(235, 179, 235)">
+            <img
+              src="images/kirandeep and surk.png"
+              alt="Customize Wedding Card"
+            />
+            <span class="card-label">Customize Wedding Card</span>
+          </div>
+          <div class="card-box" style="background-color: rgb(233, 194, 123)">
+            <img src="images/lightorange card.png" alt="Laser Wedding Card" />
+            <span class="card-label">Laser Wedding Card</span>
+          </div>
+          <div class="card-box" style="background-color: rgb(224, 102, 224)">
+            <img src="images/jasp and hasp.png" alt="Hindu Wedding Card" />
+            <span class="card-label">Hindu Wedding Card</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-block">
+            <div class="logo">
+              <img src="images/roundleaf.png" alt="Logo" />
+              <div class="logo-center-text">Cherish<br />By</div>
+            </div>
+            <div class="logo-text"><b>Wed Knot Craft</b></div>
+          </div>
+          <div class="footer-brand-name">
+            <span>Largest Wedding Cards Collections in Chennai</span>
+          </div>
+          <div class="footer-social">
+            <b> Follow us </b>
+
+            <a href="#"><img src="images/faceook.jpg" alt="Facebook" /></a>
+            <a href="#"><img src="images/instragram.jpg" alt="Instagram" /></a>
+            <a href="#"><img src="images/whatsapp.png" alt="WhatsApp" /></a>
+            <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Information</div>
+          <ul>
+            <li><a href="/aboutus.html">About Us</a></li>
+            <li><a href="/contactus.html">Contact Us</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li>
+              <a href="/howtoorder.html"
+                >How to order wedding invitation online?</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Quick Access</div>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/weddinginvitation.html">Wedding Cards</a></li>
+            <li><a href="/hindu.html">Hindu Wedding Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Contact Us</div>
+          <ul>
+            <li>
+              <img src="images/phoneicon.png" alt="Phone" class="footer-icon" />
+              +91 9876543210
+            </li>
+            <li>
+              <img src="images/email.png" alt="Email" class="footer-icon" />
+              wedtype@weddingcards.com
+            </li>
+            <li>Operating hours: 10.00Am to 10.00Pm</li>
+            <li><b>Monday - Sunday</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          ><b
+            >© Wed knot craft India Private Limited. All Rights Reserved.</b
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

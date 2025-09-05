@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wedding Card layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="logo-search-row">
+        <div class="logo-block">
+          <div class="logo">
+            <img src="images/roundleaf.png" alt="Logo" />
+            <div class="logo-center-text">Cherish<br />By</div>
+          </div>
+          <div class="logo-text">Wed Knot Craft</div>
+        </div>
+        <div class="search-icons">
+          <form action="search.html" method="get">
+            <button type="submit" class="search-button">Search...</button>
+          </form>
+
+          <a href="/contact.html" aria-label="Contact" class="nav-icon-link">
+            <i class="fa-duotone fa-solid fa-address-book"></i>
+          </a>
+
+          <a
+            href="/favourite.html"
+            aria-label="Favorites"
+            class="nav-icon-link"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <a href="/cart.html" aria-label="Shopping Cart" class="nav-icon-link">
+            <i class="fa-regular fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/card.html"></a>Home</li>
+        <li class="dropdown">
+          <span>Wedding Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hindu Wedding Cards</a></li>
+            <li><a href="#">Muslim Wedding Cards</a></li>
+            <li><a href="#">Christian Wedding Cards</a></li>
+            <li><a href="#">Exclusive Cards</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <span>Special occasions</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Birthday Invitations</a></li>
+            <li><a href="#">Pupery Cards</a></li>
+            <li><a href="#">Luxury Invitations</a></li>
+            <li><a href="#">Ear Boring Cards</a></li>
+            <li><a href="#">Engagement Cards</a></li>
+            <li><a href="#">House Warming</a></li>
+            <li><a href="#">Anniversary Cards</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Theme cards</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Beach Theme Cards</a></li>
+            <li><a href="#">Bride Theme Cards</a></li>
+            <li><a href="#">Box Cards</a></li>
+            <li><a href="#">Single Sheet Cards</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Scroll Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Small size scroll</a></li>
+            <li><a href="#">Box scroll</a></li>
+            <li><a href="#">Only scroll</a></li>
+            <li><a href="#">High end scroll</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span>Digital Invitation</span>
+          <ul class="dropdown-menu">
+            <li><a href="#">Whatsapp Cards</a></li>
+            <li><a href="#">Save the date cards</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <style>
+      .about-us {
+        background: #f2f3fc;
+        color: #22223b;
+        padding: 40px 10px;
+        max-width: 900px;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+
+      h2 {
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 24px;
+      }
+
+      .about-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        gap: 20px;
+      }
+
+      .about-text {
+        flex: 1;
+        min-width: 220px;
+      }
+
+      .about-img img {
+        width: 140px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px #bab6d7;
+      }
+
+      .about-cta {
+        background: #dde1f8;
+        border-radius: 6px;
+        padding: 18px 14px;
+        text-align: center;
+        margin-top: 28px;
+      }
+
+      @media (max-width: 700px) {
+        .about-row {
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+        }
+        .about-img img {
+          width: 90%;
+          max-width: 225px;
+          height: auto;
+        }
+      }
+    </style>
+
+    <section class="about-us">
+      <h2>ABOUT US</h2>
+
+      <div class="about-row">
+        <div class="about-text">
+          <h3>Celebrating Love, One Invitation at a Time</h3>
+          <p>
+            At Wed Knot Craft, we believe that every love story is unique and
+            deserves to be celebrated in a way that reflects its individuality.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="images/aboutusimage.jpg" alt="Wedding Celebration" />
+        </div>
+      </div>
+
+      <div class="about-row">
+        <div class="about-img">
+          <img src="images/weddingphoto.jpg" alt="Our Story" />
+        </div>
+        <div class="about-text">
+          <h3>OUR STORY</h3>
+          <p>
+            What started as a passion for design has blossomed into a
+            full-fledged business dedicated to bringing couples’ visions to
+            life.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-row">
+        <div class="about-text">
+          <h3>OUR PROMISE</h3>
+          <p>
+            We are committed to providing<br />
+            • Custom designs<br />
+            • Quality craftsmanship<br />
+            • Attention to detail<br />
+            • A memorable experience for your wedding celebration!<br />
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="images/tajmahal.jpg" alt="Our Promise" />
+        </div>
+      </div>
+
+      <div class="about-cta">
+        <h4>JOIN US in Celebrating Your Special Day</h4>
+        <p>
+          Explore our diverse range of designs and let us help you set the tone
+          for your wedding celebrations at [Your Company Name]; every love story
+          is our inspiration.
+        </p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-block">
+            <div class="logo">
+              <img src="images/roundleaf.png" alt="Logo" />
+              <div class="logo-center-text">Cherish<br />By</div>
+            </div>
+            <div class="logo-text"><b>Wed Knot Craft</b></div>
+          </div>
+          <div class="footer-brand-name">
+            <span>Largest Wedding Cards Collections in Chennai</span>
+          </div>
+          <div class="footer-social">
+            <b> Follow us </b>
+
+            <a href="#"><img src="images/faceook.jpg" alt="Facebook" /></a>
+            <a href="#"><img src="images/instragram.jpg" alt="Instagram" /></a>
+            <a href="#"><img src="images/whatsapp.png" alt="WhatsApp" /></a>
+            <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Information</div>
+          <ul>
+            <li><a href="/aboutus.html">About Us</a></li>
+            <li><a href="/contactus.html">Contact Us</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li>
+              <a href="/howtoorder.html"
+                >How to order wedding invitation online?</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Quick Access</div>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/weddinginvitation.html">Wedding Cards</a></li>
+            <li><a href="/hindu.html">Hindu Wedding Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Contact Us</div>
+          <ul>
+            <li>
+              <img src="images/phoneicon.png" alt="Phone" class="footer-icon" />
+              +91 9876543210
+            </li>
+            <li>
+              <img src="images/email.png" alt="Email" class="footer-icon" />
+              wedtype@weddingcards.com
+            </li>
+            <li>Operating hours: 10.00Am to 10.00Pm</li>
+            <li><b>Monday - Sunday</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          ><b
+            >© Wed knot craft India Private Limited. All Rights Reserved.</b
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
