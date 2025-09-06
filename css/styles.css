@@ -164,7 +164,7 @@ nav {
 
 /*section1*/
 .hero {
-  background: url("/images/roundleaf.png") no-repeat center/cover;
+  background: url("images/roundleaf.png") no-repeat center/cover;
   min-height: 380px;
   display: flex;
   align-items: center;
